@@ -124,6 +124,7 @@ export const AccountMenu = () => {
           </div>
 
           <div>
+            {/* GitHub and Discord menu items - commented out for now
             <HeaderMenuItemLink newPage href={GITHUB_URL}>
               <span
                 data-testid="menu_github_button"
@@ -144,6 +145,7 @@ export const AccountMenu = () => {
                 Discord
               </span>
             </HeaderMenuItemLink>
+            */}
             <HeaderMenuItemLink newPage href={TWITTER_URL}>
               <span
                 data-testid="menu_twitter_button"

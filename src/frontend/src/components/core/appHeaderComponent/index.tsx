@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import AlertDropdown from "@/alerts/alertDropDown";
-import LangflowLogo from "@/assets/LangflowLogo.svg?react";
+import ongcLogo from "@/assets/ongc-logo.png";
 import { AssistantButton } from "@/components/common/assistant";
 import ForwardedIconComponent from "@/components/common/genericIconComponent";
 import ModelProviderCount from "@/components/common/modelProviderCountComponent";
@@ -62,11 +62,18 @@ export default function AppHeader(): JSX.Element {
         <Button
           unstyled
           onClick={() => navigate("/")}
-          className="mr-1 flex h-8 w-8 items-center"
+          className="mr-1 flex h-8 w-8 items-center justify-center"
           data-testid="icon-ChevronLeft"
         >
-          <LangflowLogo className="h-5 w-5" />
+          <img
+            src={ongcLogo}
+            alt="ONGC Logo"
+            className="h-8 w-8 object-contain"
+          />
         </Button>
+        <span className="text-sm font-semibold whitespace-nowrap text-foreground">
+          ONGC Intelligence platform
+        </span>
         <CustomOrgSelector />
       </div>
 
