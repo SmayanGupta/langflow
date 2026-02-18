@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import AlertDropdown from "@/alerts/alertDropDown";
-import ongcLogo from "@/assets/ongc-logo.png";
+import rodicLogo from "@/assets/rodic-logo.png";
 import { AssistantButton } from "@/components/common/assistant";
 import ForwardedIconComponent from "@/components/common/genericIconComponent";
 import ModelProviderCount from "@/components/common/modelProviderCountComponent";
@@ -62,17 +62,17 @@ export default function AppHeader(): JSX.Element {
         <Button
           unstyled
           onClick={() => navigate("/")}
-          className="mr-1 flex h-8 w-8 items-center justify-center"
+          className="mr-1 flex h-8 items-center justify-center"
           data-testid="icon-ChevronLeft"
         >
           <img
-            src={ongcLogo}
-            alt="ONGC Logo"
-            className="h-8 w-8 object-contain"
+            src={rodicLogo}
+            alt="Rodic Consultants Logo"
+            className="h-8 w-auto max-w-[160px] object-contain object-left"
           />
         </Button>
         <span className="text-sm font-semibold whitespace-nowrap text-foreground">
-          ONGC Intelligence platform
+          RodicFlow
         </span>
         <CustomOrgSelector />
       </div>

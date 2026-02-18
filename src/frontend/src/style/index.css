@@ -10,39 +10,39 @@
     --font-mono: "JetBrains Mono", monospace;
     --font-chivo: "Chivo", sans-serif;
 
-    /* ONGC red & white theme - light mode */
-    --foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+    /* Rodic orange theme - light mode (#F2A838 orange, white/gray) */
+    --foreground: 220 20% 18%; /* dark gray ~#333D48 */
     --background: 0 0% 100%; /* hsl(0, 0%, 100%) */
-    --muted: 0 0% 96%; /* hsl(0, 0%, 96%) - light gray */
-    --muted-foreground: 240 4% 46%; /* hsl(240, 4%, 46%) */
+    --muted: 220 10% 96%; /* very light gray ~#F3F4F6 */
+    --muted-foreground: 220 10% 45%; /* medium gray ~#6B7280 */
     --card: 0 0% 100%; /* hsl(0, 0%, 100%) */
-    --card-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+    --card-foreground: 220 20% 18%; /* dark gray */
     --popover: 0 0% 100%; /* hsl(0, 0%, 100%) */
-    --popover-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
-    --border: 240 6% 90%; /* hsl(240, 6%, 90%) */
-    --input: 240 6% 90%; /* hsl(240, 6%, 90%) */
+    --popover-foreground: 220 20% 18%; /* dark gray */
+    --border: 220 10% 88%; /* light gray border */
+    --input: 220 10% 90%; /* hsl(240, 6%, 90%) */
     --primary-foreground: 0 0% 100%; /* white on primary */
-    --primary: 357 70% 46%; /* ONGC red ~#C8232C */
+    --primary: 36 88% 58%; /* Rodic orange ~#F2A838 */
     --secondary: 0 0% 98%; /* hsl(0, 0%, 98%) */
-    --secondary-foreground: 0 0% 15%; /* hsl(0, 0%, 15%) */
-    --accent: 357 70% 46%; /* ONGC red - selected/hover accent */
+    --secondary-foreground: 220 20% 18%; /* dark gray */
+    --accent: 36 88% 58%; /* Rodic orange - selected/hover accent */
     --accent-foreground: 0 0% 100%; /* white on accent */
     --destructive: 0 72% 51%; /* hsl(0, 72%, 51%) */
     --destructive-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
     --accent-amber: 26 90% 37%; /* hsl(26, 90%, 37%) */
     --accent-amber-foreground: 26 90% 37%; /* hsl(26, 90%, 37%) */
-    --ring: 357 70% 46%; /* focus ring - ONGC red */
-    --primary-hover: 357 70% 40%; /* slightly darker red on hover */
-    --secondary-hover: 240 6% 90%; /* hsl(240, 6%, 90%) */
-    /* Sidebar - light theme (ONGC red when used) */
+    --ring: 36 88% 58%; /* focus ring - Rodic orange */
+    --primary-hover: 36 88% 50%; /* slightly darker orange on hover */
+    --secondary-hover: 220 10% 90%; /* hsl(240, 6%, 90%) */
+    /* Sidebar - light theme (Rodic orange when used) */
     --sidebar-background: 0 0% 97%; /* very light gray */
-    --sidebar-foreground: 0 0% 0%;
-    --sidebar-primary: 357 70% 46%; /* ONGC red */
+    --sidebar-foreground: 220 20% 18%;
+    --sidebar-primary: 36 88% 58%; /* Rodic orange */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 357 25% 96%; /* very light red tint hover */
-    --sidebar-accent-foreground: 0 0% 0%;
-    --sidebar-border: 240 6% 90%;
-    --sidebar-ring: 357 70% 46%;
+    --sidebar-accent: 36 70% 94%; /* light peachy ~#FEEBC2 */
+    --sidebar-accent-foreground: 220 20% 18%;
+    --sidebar-border: 220 10% 88%;
+    --sidebar-ring: 36 88% 58%;
     --placeholder-foreground: 240 5% 65%; /* hsl(240, 5%, 65%) */
     --canvas: 240 5% 96%; /* hsl(240, 5%, 96%) */
     --canvas-dot: 240 5% 65%; /* hsl(240, 5%, 65%) */
@@ -51,7 +51,7 @@
     --accent-emerald-hover: 152.4 76% 80.4%; /* hsl(152.4, 76%, 80.4%) */
     --accent-indigo: 226 100% 94%; /* hsl(226, 100%, 94%) */
     --accent-indigo-foreground: 243 75% 59%; /* hsl(243, 75%, 59%) */
-    --accent-red-foreground: 357 70% 46%; /* ONGC red - links */
+    --accent-red-foreground: 36 88% 58%; /* Rodic orange - links */
 
     --accent-pink: 326, 78%, 95%; /* hsl(326, 78%, 95%) */
     --accent-pink-foreground: 333 71% 51%; /* hsl(333, 71%, 51%) */
@@ -79,10 +79,10 @@
     --jse-info-color: hsl(221, 83%, 53%);
     --jse-success-color: hsl(142, 76%, 36%);
 
-    --node-selected: 357 70% 46%; /* ONGC red - selected node ring */
+    --node-selected: 36 88% 58%; /* Rodic orange - selected node ring */
     --round-btn-shadow: #00000063;
     --ice: #31a3cc;
-    --selected: #c8232c; /* ONGC red */
+    --selected: #f2a838; /* Rodic orange */
     --discord-color: #5765f2;
 
     --error-background: #fef2f2;
@@ -213,27 +213,27 @@
   }
 
   .dark {
-    /* ONGC red & white theme - dark mode */
+    /* Rodic orange theme - dark mode */
     --foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
-    --background: 240 6% 10%; /* hsl(240, 6%, 10%) */
+    --background: 220 18% 14%; /* dark charcoal ~#333D48 */
     --muted: 240 4% 16%; /* hsl(240, 4%, 16%) */
-    --muted-foreground: 240 5% 65%; /* hsl(240, 5%, 65%) */
-    --card: 240 6% 10%; /* hsl(240, 6%, 10%) */
+    --muted-foreground: 220 10% 65%; /* light gray ~#A3ABB2 */
+    --card: 220 18% 14%; /* dark charcoal */
     --card-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
-    --popover: 240 6% 10%; /* hsl(240, 6%, 10%) */
+    --popover: 220 18% 14%; /* hsl(240, 6%, 10%) */
     --popover-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
-    --border: 240 5% 26%; /* hsl(240, 5%, 26%) */
-    --input: 240 5% 34%; /* hsl(240, 5%, 34%) */
+    --border: 220 12% 26%; /* hsl(240, 5%, 26%) */
+    --input: 220 12% 34%; /* hsl(240, 5%, 34%) */
     --primary-foreground: 0 0% 100%; /* white on primary */
-    --primary: 357 70% 46%; /* ONGC red */
+    --primary: 36 88% 58%; /* Rodic orange */
     --secondary: 240 4% 16%; /* hsl(240, 4%, 16%) */
     --secondary-foreground: 240 6% 90%; /* hsl(240, 6%, 90%) */
-    --accent: 357 70% 46%; /* ONGC red - selected/hover */
+    --accent: 36 88% 58%; /* Rodic orange - selected/hover */
     --accent-foreground: 0 0% 100%; /* white on accent */
     --destructive: 0 84% 60%; /* hsl(0, 84%, 60%) */
     --destructive-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
-    --ring: 357 70% 46%; /* ONGC red focus ring */
-    --primary-hover: 357 70% 52%; /* slightly lighter red on hover */
+    --ring: 36 88% 58%; /* Rodic orange focus ring */
+    --primary-hover: 36 88% 65%; /* slightly lighter orange on hover */
     --secondary-hover: 240 4% 16%; /* hsl(240, 4%, 16%) */
     --placeholder-foreground: 240 4% 46%; /* hsl(240, 4%, 46%) */
     --canvas: 0 0% 0%; /* hsl(0, 0%, 0%) */
@@ -247,7 +247,7 @@
     --accent-pink: 336, 69%, 30%; /* hsl(336, 69%, 30%) */
     --accent-pink-foreground: 329 86% 70%; /* hsl(329, 86%, 70%) */
     --accent-purple-foreground: 270, 95%, 75%;
-    --accent-red-foreground: 0 85% 75%; /* red link in dark - slightly lighter */
+    --accent-red-foreground: 36 90% 70%; /* orange link in dark */
     --tooltip: 0 0% 100%; /* hsl(0, 0%, 100%) */
 
     --jse-theme-color: hsl(240, 4%, 16%) !important;
@@ -358,12 +358,12 @@
     --warning-foreground: 240 6% 10%; /* hsl(240, 6%, 10%) */
     --warning-text: 0 0% 100%; /* hsl(0, 0%, 100%) */
 
-    --node-selected: 357 70% 46%; /* ONGC red - selected node in dark */
+    --node-selected: 36 88% 58%; /* Rodic orange - selected node in dark */
 
     --ice: #60a5fa;
     --hover: #1a202e;
     --disabled-run: #6366f1;
-    --selected: #c8232c; /* ONGC red - dark mode */
+    --selected: #f2a838; /* Rodic orange - dark mode */
     --discord-color: #5765f2;
 
     --filter-foreground: #eef2ff;
@@ -410,9 +410,9 @@
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 357 70% 46%; /* ONGC red */
+    --sidebar-primary: 36 88% 58%; /* Rodic orange */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 357 50% 28%; /* darker red hover in dark */
+    --sidebar-accent: 36 60% 35%; /* darker orange hover in dark */
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
